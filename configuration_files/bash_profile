@@ -1,0 +1,98 @@
+export PS1='\[\033[01;32;01m\]\h:\[\033[01;31;01m\]\W \[\033[01;32;01m\]\u$\[\033[01;00;00m\] '
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+
+export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/local/Cellar/hdf5/1.12.0_1/lib
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/local/Cellar/hdf5/1.12.0_1/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/Cellar/hdf5/1.12.0_1/lib
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/Cellar/hdf5/1.12.0_1/lib
+
+
+
+
+# >>> yinfu_code path >>>
+export PATH=/Users/yf/1.Software/0.yinfu_code/bin:${PATH}
+export PATH=/Users/yf/.local/bin:${PATH}
+# >>> yinfu_code path >>>
+
+
+
+
+# >>> sac initialize >>>
+export SACHOME=/Users/yf/1.Software/1.SAC/sac
+export SACAUX=${SACHOME}/aux
+export PATH=${SACHOME}/bin:${PATH}
+
+export SAC_DISPLAY_COPYRIGHT=1
+export SAC_PPK_LARGE_CROSSHAIRS=1
+export SAC_USE_DATABASE=0
+# <<< sac initialize <<<
+
+
+
+# >>> gmt initialize >>>
+export GMT_DATADIR=/Users/yf/1.Software/2.GMT/GMTDB/
+# <<< gmt initialize <<<
+
+
+
+
+
+
+# >>> specfem3d install >>>
+# ulimit -Ha
+# >>> specfem3d install >>>
+
+
+
+
+
+# >>> geocubit install >>>
+export CUBITDIR=/Applications/Trelis-16.5.app
+export PYTHONPATH=$CUBITDIR/contents/MacOS:$PYTHONPATH
+export CUBITLIB=$CUBITDIR/contents/MacOS
+export DYLD_LIBRARY_PATH=$CUBITDIR/contents/MacOS:${DYLD_LIBRARY_PATH}
+export PATH=$PATH:$CUBITDIR:$CUBITDIR/Contents/MacOS
+# >>> geocubit install >>>
+
+
+
+
+
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/yf/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+eval "$__conda_setup"
+else
+if [ -f "/Users/yf/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+. "/Users/yf/opt/anaconda3/etc/profile.d/conda.sh"
+else
+export PATH="/Users/yf/opt/anaconda3/bin:$PATH"
+fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+# >>> spack >>>
+. /Users/yf/1.Software/23.spack/spack/share/spack/setup-env.sh
+# <<< spack <<<
+
+
+
+# >>> module >>> It get some error when I use on-my-zsh with p10k, so I just close this variable
+# source /usr/local/Modules/init/bash
+# <<< module <<<
+
+
+# >>> I don't know when I get following line >>>
+# unset ALL_PROXY
+# <<< I don't know when I get following line <<<
+
+
+
+
